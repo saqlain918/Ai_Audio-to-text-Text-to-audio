@@ -45,7 +45,7 @@ if st.button("Generate Audio with "):
     if input_text.strip() == "":
         st.warning("Please enter some text first.")
     else:
-        ELEVEN_API_KEY = "sk_efd6e4a283dfa0a3faaed8d0e2d06efbb9227a308b11ace6"  # 🔑 replace with your key
+        ELEVEN_API_KEY = "Elenenlab Api key"  # 🔑 replace with your key
         VOICE_ID = "pqHfZKP75CvOlQylNhV4"  # can be Rachel, Domi, Bella, or your own voice ID
         ELEVEN_URL = f"https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}"
 
@@ -73,3 +73,4 @@ if st.button("Generate Audio with "):
             st.audio(tmp_audio_path, format="audio/mp3")
         else:
             st.error(f"❌ ElevenLabs Error: {response.status_code} - {response.text}")
+
